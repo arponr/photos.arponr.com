@@ -1,0 +1,25 @@
+$font-main: hack, monospace;
+
+$site-width: 100%;
+
+$size-base: (13/16)*100%;
+$size-small: .9em;
+$size-large: 1.3em;
+
+$line-height: 1.7;
+$line-height-unit: $line-height * 1rem;
+$line-height-small: 1.5;
+
+$background-base: #18201f;
+$background-accent: #666666;
+
+$color-base: #cccdcd;
+$color-light: #aaabab;
+$color-accent: #bef7d6;
+
+$nanoskip: 0.1 * $line-height-unit;
+$tinyskip: 0.25 * $line-height-unit;
+$smallskip: 0.5 * $line-height-unit;
+$medskip: 1 * $line-height-unit;
+$bigskip: 1.5 * $line-height-unit;
+$hugeskip: 2.0 * $line-height-unit;

@@ -1,0 +1,15 @@
+{
+    "name": "photos.arponr.com",
+    "version": "0.1.0",
+    "private": true,
+    "devDependencies": {
+        "brunch": "^2.10.10",
+        "javascript-brunch": "^2.10.0",
+        "pug": "^2.0.0-rc.3",
+        "pugjs-brunch": "^2.10.0",
+        "sass-brunch": "^2.10.4"
+    },
+    "dependencies": {
+        "jquery": "^3.2.1"
+    }
+}

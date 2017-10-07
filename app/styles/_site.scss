@@ -1,0 +1,56 @@
+%wrap {
+  margin: 0 auto;
+  width: 100%;
+  padding: 2.0rem;
+  position: relative;
+  overflow-y: hidden;
+}
+
+.site {
+  @extend %wrap;
+
+  &__header {
+    margin-bottom: $medskip;
+  }
+
+  .nav__name {
+    font-weight: bold;
+  }
+  
+  .nav__sec {
+    @extend %meta;
+  }
+
+  &, &__main, &__content {
+    height: 100%;
+  }
+
+  &__main {
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+
+  &__content {
+    width: auto;
+    white-space: nowrap;
+  }
+}
+
+.content__pane {
+  height: 100%;
+  display: inline-block;
+  margin-right: 2.0rem;
+  
+  .pane__photo {
+    float: left;
+    height: calc(100% - 2 * #{$hugeskip});
+    width: auto;
+  }
+
+  .pane__caption {
+    clear: left;
+    float: left;
+    margin-top: 1.5 * $smallskip;
+    @extend %small;
+  }
+}

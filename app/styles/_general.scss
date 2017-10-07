@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+
+  text-rendering: optimizeLegibility;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+html, body {
+  height: 100%;
+}
+
+html {
+  font-family: $font-main;
+  font-size: $size-base;
+  line-height: $line-height;
+  color: $color-base;
+  background: $background-base;
+
+  font-variant-numeric: oldstyle-nums;
+  -moz-font-feature-settings: "onum";
+  -webkit-font-feature-settings: "onum";
+  font-feature-settings: "onum";
+
+  @media (min-device-pixel-ratio: 2) {
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+  }
+
+  @media (max-width: 600px) {
+    font-size: .95 * $size-base;
+  }
+
+  @media (max-width: 425px) {
+    font-size: .9 * $size-base;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  font-size: 1em;
+}
+
+sup, sub {
+  vertical-align: baseline;
+  position: relative;
+  font-size: $size-small;
+}
+
+sup {
+  top: -0.4em;
+}
+
+sub {
+  top: 0.4em;
+}
+
+%small {
+  font-size: $size-small;
+  line-height: $line-height-small;
+}
+
+%meta {
+  color: $color-light;
+}
+  
